@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5fbff;
+  color: #06275a;
+  font-synthesis-weight: none;
+  text-rendering: geometricPrecision;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1180px] px-5 sm:px-8 lg:px-10;
+  }
+
+  .nav-link {
+    @apply relative text-[12px] font-black text-deep transition hover:text-green;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-2 left-1/2 h-[3px] w-0 -translate-x-1/2 rounded-full bg-green transition-all;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link-active {
+    @apply text-green;
+  }
+
+  .nav-link-active::after {
+    @apply w-full;
+  }
+
+  .btn-green {
+    @apply inline-flex items-center justify-center gap-3 rounded-[4px] border border-[#2f8b1f] bg-green px-6 py-3 text-[13px] font-black uppercase tracking-normal text-white shadow-[0_11px_20px_rgba(67,174,43,0.28),inset_0_1px_0_rgba(255,255,255,0.24)] transition hover:bg-[#358f22];
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center gap-3 rounded-[4px] border border-[#031e4f] bg-navy px-6 py-3 text-[13px] font-black uppercase tracking-normal text-white shadow-[0_11px_20px_rgba(2,25,71,0.24),inset_0_1px_0_rgba(255,255,255,0.16)] transition hover:bg-deep;
+  }
+
+  .field {
+    @apply h-11 w-full rounded-[3px] border border-slate-300 bg-white px-3 text-sm text-deep outline-none transition focus:border-pool focus:ring-2 focus:ring-pool/20;
+  }
+
+  .label {
+    @apply mb-1.5 block text-xs font-black text-deep;
+  }
+}
