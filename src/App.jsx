@@ -6,6 +6,9 @@ import poolOne from './assets/pool-1.jpg'
 import poolTwo from './assets/pool-2.jpg'
 import poolThree from './assets/pool-3.jpg'
 import poolFour from './assets/pool-4.jpg'
+import serviceLiners from './assets/service-liners.png'
+import servicePumps from './assets/service-pumps.png'
+import serviceFilters from './assets/service-filters.png'
 import owner from './assets/owner.jpg'
 import linerIcon from './assets/icons/liner.png'
 import pumpIcon from './assets/icons/pump.png'
@@ -35,19 +38,19 @@ const services = [
     title: 'Pool Liners',
     text: 'High-quality liners for a perfect fit and long-lasting performance.',
     icon: linerIcon,
-    image: poolThree,
+    image: serviceLiners,
   },
   {
     title: 'Pool Pumps',
     text: 'Reliable pump installation and replacement to keep your water flowing.',
     icon: pumpIcon,
-    image: poolFour,
+    image: servicePumps,
   },
   {
     title: 'Pool Filters',
     text: 'Clean, clear water starts with a good filter. We install and service all types.',
     icon: filterIcon,
-    image: poolTwo,
+    image: serviceFilters,
   },
   {
     title: 'Pool Openings',
